@@ -1,3 +1,27 @@
+/* ===== Global Mobile Safety ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+
 /* Modal Header Styling */
 .modal-content h3 {
     margin-bottom: 25px;
@@ -1092,3 +1116,53 @@ img {
   }
 
 }
+/* ===== Global Mobile Layout ===== */
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  /* Header stacks */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Navigation stacks */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav a, 
+  nav button {
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  /* Containers shrink properly */
+  .container,
+  .main-container,
+  .content {
+    width: 95%;
+    margin: auto;
+  }
+
+  /* Any flex row becomes vertical */
+  .row,
+  .grid,
+  .flex {
+    flex-direction: column;
+  }
+
+  /* Buttons full width on mobile */
+  button {
+    width: 100%;
+  }
+
+}
+

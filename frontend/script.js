@@ -52,10 +52,12 @@ async function loadMainsQuestions(user) {
     const questions = docSnap.data().questions;
     const container = document.getElementById("mains-questions");
 
-if (container) {
-  container.innerHTML = questionsHTML;
-}
+    if (!container) {
+      console.error("Mains container not found in DOM");
+      return;
+    }
 
+    container.innerHTML = ""; // clear old content
 
     questions.forEach(q => {
       const card = document.createElement("div");
@@ -71,13 +73,13 @@ if (container) {
       container.appendChild(card);
     });
 
-    // 🔥 After rendering, mark already submitted
     await markSubmittedQuestions(user);
 
   } catch (error) {
     console.error("Error loading mains questions:", error);
   }
 }
+
 
 /* ---------------- MARK SUBMITTED ---------------- */
 
@@ -312,7 +314,8 @@ window.validateAndUpload = async function () {
     const user = auth.currentUser;
     const token = await user.getIdToken();
 
-    const response = await fetch("http://localhost:5000/upload", {
+    const response = await fetch("https://api.dablew.in/upload", {
+
       method: "POST",
       headers: {
         "Authorization": `Bearer ${token}`
@@ -390,5 +393,6 @@ window.goToHabitTracker = async function () {
         window.location.href = "habit-setup.html";
     }
 };
+
 
 

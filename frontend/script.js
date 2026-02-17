@@ -51,7 +51,11 @@ async function loadMainsQuestions(user) {
 
     const questions = docSnap.data().questions;
     const container = document.getElementById("mains-questions");
-    container.innerHTML = "";
+
+if (container) {
+  container.innerHTML = questionsHTML;
+}
+
 
     questions.forEach(q => {
       const card = document.createElement("div");
@@ -386,4 +390,5 @@ window.goToHabitTracker = async function () {
         window.location.href = "habit-setup.html";
     }
 };
+
 

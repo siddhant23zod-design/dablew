@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>dablew.in | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo" onclick="window.location.href='index.html'">
+            dable<span>w.in</span>
+        </div>
+
+        <nav id="auth-buttons">
+            <button class="btn-nav" onclick="toggleModal('signupModal')">Signup</button>
+            <button class="btn-nav" onclick="toggleModal('loginModal')">Login</button>
+        </nav>
+
+        <nav id="user-profile" style="display:none;">
+            <span id="display-name"></span>
+            <button class="btn-nav" onclick="toggleModal('logoutModal')">Logout</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="main-grid">
+            <a href="mains.html" class="card">Mains Answer Writing</a>
+            <a href="prelims.html" class="card">Prelims Practice</a>
+            <a href="#" class="card">Shop Products</a>
+            <button class="habit-entry-btn" onclick="goToHabitTracker()">
+                Habit Tracker
+            </button>
+
+        </div>
+    </main>
+
+    <section class="about-section">
+        <h2>About Us</h2>
+        <p>
+            We are a group of students driven by passion to clear the Civil Services Examination.
+            This website was started as an endeavour by us to provide students preparing away from Delhi,
+            the services and infrastructure that one often feels are lacking during self-preparation.
+            We do not encourage copyright infringement and all the resources are procured,
+            produced and managed by us. For more queries, contact support@dablew.in
+        </p>
+    </section>
+
+    <!-- ================= SIGNUP MODAL ================= -->
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <div class="close-btn-wrapper" onclick="toggleModal('signupModal')">
+                <span class="close-x">&times;</span>
+            </div>
+
+            <h3>Join dablew.in</h3>
+
+            <form onsubmit="handleSignup(event)">
+                <input type="text" id="reg-name" placeholder="Full Name" required>
+                <input type="email" id="signup-email" placeholder="Email ID" required>
+                <input type="password" id="signup-password" placeholder="Create Password" required>
+
+                <button type="submit" class="btn-submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ================= LOGIN MODAL ================= -->
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="close-btn-wrapper" onclick="toggleModal('loginModal')">
+                <span class="close-x">&times;</span>
+            </div>
+
+            <h3>Login to dablew.in</h3>
+
+            <form onsubmit="handleLogin(event)">
+                <input type="email" id="login-email" placeholder="Email ID" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+
+                <!-- White Forgot Password Button -->
+                <button type="button" class="btn-white" onclick="handleForgotPassword()">
+                    Forgot Password
+                </button>
+
+                <button type="submit" class="btn-submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ================= LOGOUT MODAL ================= -->
+
+    <div id="logoutModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to logout?</p>
+            <div class="flex-buttons">
+                <button class="btn-red" onclick="logout()">Yes</button>
+                <button class="btn-grey" onclick="toggleModal('logoutModal')">No</button>
+            </div>
+        </div>
+    </div>
+<!-- ================= MESSAGE MODAL ================= -->
+
+<div id="messageModal" class="modal">
+    <div class="modal-content">
+        <div class="close-btn-wrapper" onclick="toggleModal('messageModal')">
+            <span class="close-x">&times;</span>
+        </div>
+
+        <h3 id="message-title"></h3>
+        <p id="message-text" style="margin-top:10px;"></p>
+
+        <button class="btn-submit" style="margin-top:15px;" onclick="toggleModal('messageModal')">
+            Okay
+        </button>
+    </div>
+</div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>

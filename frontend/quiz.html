@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prelims Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo" id="quiz-logo">
+            dable<span>w.in</span>
+        </div>
+
+    
+        <div style="display:flex; align-items:center; gap:20px;">
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+            <div id="timer"></div>
+        </div>
+    </header>
+
+
+    <main class="quiz-layout">
+    
+        <div class="quiz-left">
+            <div id="quiz-container"></div>
+            <div id="quiz-navigation"></div>
+        </div>
+    
+        <div class="quiz-right">
+            <h4 class="palette-title">Questions</h4>
+            <div id="question-palette"></div>
+        </div>
+    
+    </main>
+
+
+
+    <script type="module" src="quiz.js"></script>
+
+    <!-- Quit Test Modal -->
+    <div id="quitModal" class="modal">
+        <div class="modal-content">
+            <h3>Do you really want to quit the test?</h3>
+    
+            <div class="flex-buttons">
+                <button class="btn-red" id="confirmQuit">Yes</button>
+                <button class="btn-grey" id="cancelQuit">No</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

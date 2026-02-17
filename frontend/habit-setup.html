@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Habit Setup | dablew.in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo" onclick="window.location.href='index.html'">
+            dable<span>w.in</span>
+        </div>
+
+        <nav id="user-profile">
+            <span id="display-name"></span>
+            <button class="btn-nav" onclick="window.location.href='habit-tracker.html'">
+                Tracker
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div class="habit-setup-card">
+            <h3>Set Your 13 Core Habits</h3>
+            <p style="margin-bottom:20px; color:#777;">
+                You can edit these anytime.
+            </p>
+
+            <div class="habit-setup-grid" id="habit-inputs">
+                <!-- Inputs inserted dynamically -->
+            </div>
+
+            <button class="btn-submit" id="saveHabitsBtn" style="margin-top:25px;">
+                Save Habits
+            </button>
+        </div>
+
+    </main>
+
+    <script type="module" src="habit-setup.js"></script>
+
+</body>
+
+</html>

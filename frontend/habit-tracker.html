@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Habit Tracker | dablew.in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo" onclick="window.location.href='index.html'">
+            dable<span>w.in</span>
+        </div>
+
+        <nav id="user-profile">
+            <span id="display-name"></span>
+            <button class="btn-nav" onclick="window.location.href='habit-setup.html'">
+                Edit Habits
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- DAILY TRACKER -->
+        <div class="habit-tracker-card">
+            <h3>Today's Habits</h3>
+            <div id="habit-list"></div>
+            <div class="habit-score" id="dailyScore">Today's Score: 0</div>
+        </div>
+
+        <!-- WEEK GRID -->
+        <div class="week-grid-wrapper">
+            <h3 class="week-title">Weekly Performance</h3>
+            <div id="week-grid" class="week-grid"></div>
+        </div>
+
+    </main>
+
+    <script type="module" src="habit-tracker.js"></script>
+
+</body>
+
+</html>

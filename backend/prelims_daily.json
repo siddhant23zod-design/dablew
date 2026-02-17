@@ -1,0 +1,110 @@
+[
+  {
+    "year": "2014",
+    "questionNumber": 1,
+    "question": "What are the significances of a practical approach to sugarcane production known as ‘Sustainable Sugarcane Initiative’?\n\n1. Seed cost is very low in this compared to the conventional method of cultivation.\n2. Drip irrigation can be practiced very effectively in this.\n3. There is no application of chemical/inorganic fertilizers at all in this.\n4. The scope for intercropping is more in this compared to the conventional method of cultivation.\n\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 3 only",
+      "1, 2 and 4 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "year": "2014",
+    "questionNumber": 2,
+    "question": "If a wetland of international importance is brought under the ‘Montreux Record’, what does it imply?",
+    "options": [
+      "Changes in ecological character have occurred, are occurring or are likely to occur in the wetland as a result of human interference.",
+      "The country in which the wetland is located should enact a law to prohibit any human activity within five kilometres from the edge of the wetland.",
+      "The survival of the wetland depends on the cultural practices and traditions of certain communities living in its vicinity and therefore the cultural diversity therein should not be destroyed.",
+      "It is given the status of ‘World Heritage Site’."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "year": "2014",
+    "questionNumber": 3,
+    "question": "Which one of the following pairs of islands is separated from each other by the ‘Ten Degree Channel’?",
+    "options": [
+      "Andaman and Nicobar",
+      "Nicobar and Sumatra",
+      "Maldives and Lakshadweep",
+      "Sumatra and Java"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "year": "2014",
+    "questionNumber": 4,
+    "question": "Consider the following pairs:\n\n1. Drought-Prone Area Programme : Ministry of Agriculture\n2. Desert Development Programme : Ministry of Environment and Forests\n3. National Watershed Development Project for Rainfed Areas : Ministry of Rural Development\n\nWhich of the above pairs is/are correctly matched?",
+    "options": [
+      "1 and 2 only",
+      "3 only",
+      "1, 2 and 3",
+      "None"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "year": "2014",
+    "questionNumber": 5,
+    "question": "With reference to Bombay Natural History Society (BNHS), consider the following statements:\n\n1. It is an autonomous organization under the Ministry of Environment and Forests.\n2. It strives to conserve nature through action-based research, education and public awareness.\n3. It organizes and conducts nature trails and camps for the general public.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 3 only",
+      "2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "year": "2014",
+    "questionNumber": 6,
+    "question": "With reference to ‘Global Environment Facility’, which of the following statements is/are correct?",
+    "options": [
+      "It serves as financial mechanism for ‘Convention on Biological Diversity’ and ‘United Nations Framework Convention on Climate Change’.",
+      "It undertakes scientific research on environmental issues at global level.",
+      "It is an agency under OECD to facilitate the transfer of technology and funds to underdeveloped countries with specific aim to protect their environment.",
+      "Both (a) and (b)."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "year": "2014",
+    "questionNumber": 7,
+    "question": "With reference to technologies for solar power production, consider the following statements:\n\n1. ‘Photovoltaics’ is a technology that generates electricity by direct conversion of light into electricity, while ‘Solar Thermal’ is a technology that utilizes the Sun’s rays to generate heat which is further used in electricity generation process.\n2. Photovoltaics generates Alternating Current (AC), while Solar Thermal generates Direct Current (DC).\n3. India has manufacturing base for Solar Thermal technology, but not for Photovoltaics.\n\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+      "None"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "year": "2014",
+    "questionNumber": 8,
+    "question": "Consider the following languages:\n\n1. Gujarati\n2. Kannada\n3. Telugu\n\nWhich of the above has/have been declared as ‘Classical Language/Languages’ by the Government?",
+    "options": [
+      "1 and 2 only",
+      "3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "year": "2014",
+    "questionNumber": 9,
+    "question": "Consider the following pairs:\n\n1. Dampa Tiger Reserve : Mizoram\n2. Gumti Wildlife Sanctuary : Sikkim\n3. Saramati Peak : Nagaland\n\nWhich of the above pairs is/are correctly matched?",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctAnswer": 2
+  }
+]
